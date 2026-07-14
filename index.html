@@ -147,6 +147,26 @@
   }
   @keyframes blink { 50% { opacity: 0; } }
 
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    padding: 12px 20px;
+    background: var(--accent);
+    color: #05170c;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .cta-btn:hover {
+    background: #6ee89a;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  .cta-btn .prompt { color: #05170c; }
+
   /* Sections */
   section { padding: 56px 0; border-top: 1px solid var(--border); }
   h2 {
@@ -252,6 +272,10 @@
         <div class="line"><span class="prompt">$</span> <span class="caret"></span></div>
       </div>
     </div>
+
+    <a class="cta-btn" href="mailto:terminalyumokmin@gmail.com">
+      <span class="prompt">&gt;</span> Get in touch
+    </a>
   </section>
 
   <section id="services">
